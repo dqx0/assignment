@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func run() {
+func Run() {
 	qList := make([]float64, 0)
 	etaList := make([]float64, 0)
 	etaExList := make([]float64, 0)
@@ -26,7 +26,7 @@ func run() {
 		etaExList = append(etaExList, etaEx)
 	}
 
-	q := 0.95
+	q := 0.85
 	ws2 := -100000.0
 	m := -ws2 / (3375.13 - (2357.65*q + 251.18))
 	F_CH4 := m * (3375.13 - 267.88) / (842.626 - 74.520)
